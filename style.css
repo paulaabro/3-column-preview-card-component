@@ -18,11 +18,12 @@ main {
 .card {
   width: 327px;
   padding: 48px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .sedans {
   background-color: #e28625;
-  border-radius: 8px 8px 0 0;
 }
 
 .suvs {
@@ -31,7 +32,6 @@ main {
 
 .luxury {
   background-color: #004140;
-  border-radius: 0 0 8px 8px;
 }
 
 h2 {
@@ -81,13 +81,6 @@ button {
     width: 307px;
   }
 
-  .sedans {
-    border-radius: 8px 0 0 8px;
-  }
-
-  .luxury {
-    border-radius: 0 8px 8px 0;
-  }
   p {
     margin-bottom: 60px;
   }
