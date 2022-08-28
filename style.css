@@ -4,12 +4,25 @@ body {
   font-family: "Lexend Deca", sans-serif;
 }
 
+main {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
 .card {
-  padding: 48px calc(50vw - 115px);
+  width: 327px;
+  padding: 48px;
 }
 
 .sedans {
   background-color: #e28625;
+  border-radius: 8px 8px 0 0;
 }
 
 .suvs {
@@ -18,6 +31,7 @@ body {
 
 .luxury {
   background-color: #004140;
+  border-radius: 0 0 8px 8px;
 }
 
 h2 {
@@ -58,14 +72,21 @@ button {
   color: #004140;
 }
 
-@media (min-width: 760px) {
-  main {
+@media (min-width: 921px) {
+  .cards {
     display: flex;
   }
 
   .card {
-    width: calc(100vw / 3);
-    padding: calc(16vw - 106px);
+    width: 307px;
+  }
+
+  .sedans {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .luxury {
+    border-radius: 0 8px 8px 0;
   }
   p {
     margin-bottom: 60px;
