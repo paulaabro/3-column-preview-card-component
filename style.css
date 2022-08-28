@@ -54,6 +54,42 @@ button {
   color: #006971;
 }
 
-.luxury button{
+.luxury button {
   color: #004140;
+}
+
+@media (min-width: 760px) {
+  main {
+    display: flex;
+  }
+
+  .card {
+    width: calc(100vw / 3);
+    padding: calc(16vw - 106px);
+  }
+  p {
+    margin-bottom: 60px;
+  }
+
+  button {
+    transition: all 500ms;
+  }
+
+  .card button:hover {
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+  }
+
+  .sedans button:hover {
+    background-color: #e28625;
+  }
+
+  .suvs button:hover {
+    background-color: #006971;
+  }
+
+  .luxury button:hover {
+    background-color: #004140;
+  }
 }
